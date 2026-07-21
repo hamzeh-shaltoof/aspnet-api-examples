@@ -1,0 +1,36 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7009
+
+###
+POST {{baseURL}}/productBody
+Content-Type : application/json
+
+{
+    "Name": "Phone",
+    "Price": 3.65,
+    "Quantity": 100
+}
+
+
+###
+POST {{baseURL}}/productBodyXML-controller
+Content-Type: application/xml
+
+<Product>
+    <Name>phone</Name>
+    <Price>100</Price>
+    <Quantity>2</Quantity>
+</Product>
+
+
+###
+POST {{baseURL}}/productBodyXML-controller ## XML Write Show
+Content-Type : application/xml
+Accept : application/xml
+
+<Product>
+    <Name>phone</Name>
+    <Price>100</Price>
+    <Quantity>2</Quantity>
+</Product>

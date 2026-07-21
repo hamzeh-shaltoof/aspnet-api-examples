@@ -1,0 +1,22 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7182
+
+
+###
+GET {{baseURL}}/products/all
+###
+GET {{baseURL}}/Route-Table
+###
+GET {{baseURL}}/Welcome
+
+
+
+
+
+
+
+
+
+
+ 

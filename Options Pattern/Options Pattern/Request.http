@@ -1,0 +1,12 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7220
+
+### Singleton Snapshot
+GET {{baseURL}}/ioption
+
+###  Snapshot Per Request
+GET {{baseURL}}/ioption-per-request
+
+### Snapshot Per On Change
+GET {{baseURL}}/ioption-per-change

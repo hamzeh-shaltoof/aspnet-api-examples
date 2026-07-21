@@ -1,0 +1,22 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7125
+
+###
+POST {{baseURL}}/api/products/create
+content-type:application/json
+{
+  "name": "Smart Watch Pro X",
+  "description": "High-end smartwatch with GPS",
+  "sku": "PRD-00122",
+  "price": 249.99,
+  "stockQuantity": 1,
+  "launchDate": "2027-06-01",
+  "category": "Electronics",
+  "imageUrl": "https://cdn.example.com/products/watch.jpg",
+  "weight": 0.4,
+  "warrantyPeriodMonths": 24,
+  "isReturnable": true,
+  "returnPolicyDescription": "Returns accepted within 30 days with receipt.",
+  "tags": ["smartwatch", "gps", "wearable"]
+}

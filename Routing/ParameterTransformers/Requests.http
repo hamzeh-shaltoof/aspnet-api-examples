@@ -1,0 +1,20 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7069
+
+
+###
+GET {{baseURL}}/LinkGenerator
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,17 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7020
+
+###
+GET {{baseURL}}/products/Phones/1?page=10&pagesize=6
+
+###
+GET {{baseURL}}/products/Phones-Controller?page=10&pagesize=6
+###
+GET {{baseURL}}/PaginationAsClass?query=Pagination&page=10&pagesize=6
+###
+GET {{baseURL}}/PaginationAsClass-Minimal?query=Pagination&page=10&pagesize=6
+###
+GET {{baseURL}}/array?ids=1&ids=2&ids=3&ids=4
+###
+GET {{baseURL}}/RangeDateQueryPare?rangeDateQuery=2025-8-12,2026-1-22

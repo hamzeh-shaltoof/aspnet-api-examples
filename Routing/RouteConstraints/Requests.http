@@ -1,0 +1,27 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7248
+
+
+###
+GET {{baseURL}}/products/a
+###
+GET {{baseURL}}/users/a
+###
+GET {{baseURL}}/lengthrange/hamzeh.txt
+###
+GET {{baseURL}}/regex/123-12-1234
+
+###
+GET {{baseURL}}/year-month-day/2025/7/23
+
+
+
+
+
+
+
+
+
+
+ 

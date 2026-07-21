@@ -1,0 +1,67 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7040
+@productId = 2779ee47-10b0-4bd7-8342-404006aa1392
+https://localhost:7040
+### OPTIONS
+OPTIONS {{baseURL}}/api/options
+
+
+### HEAD
+Head {{baseURL}}/api/Head/{{productId}}
+
+
+### GET
+GET {{baseURL}}/api/Get/{{productId}}?isIncludedReviews=false
+
+### GET
+GET {{baseURL}}/api/Get?page=2&pageSize=11&isIncludedReviews=true
+
+### POST
+POST {{baseURL}}/api/Post
+content-type: application/json
+{
+    "name": "Product 32",
+    "price": 100.5
+}
+
+
+### PUT
+PUT {{baseURL}}/api/Put/{{productId}}
+content-type: application/json
+{
+    "name": "Product 31",
+    "price": 100.5
+}
+
+
+### PATCH
+PATCH {{baseURL}}/api/patch/{{productId}}
+content-type: application/json+patch+json
+[
+    {
+        "op": "replace",
+        "path": "/price",
+        "value": 50.0
+    }
+]
+
+
+### DELETE
+DELETE {{baseURL}}/api/delete/{{productId}}
+
+
+### Accepted
+Get {{baseURL}}/api/Accepted
+
+### Accepted
+Get {{baseURL}}/api/Accepted/status/0278e9e9-45d4-4022-ad0f-110aca92ebb8
+
+
+### File
+Get {{baseURL}}/api/file/csv
+
+
+### FilePhysical
+Get {{baseURL}}/api/file/FilePhysical
+

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAnnotationValidation", "DataAnnotationValidation\DataAnnotationValidation.csproj", "{DC9C0035-BDB0-45B5-81A3-5762DA824DC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAnnotationValidationUsingMinimalAPI", "DataAnnotationValidationUsingMinimalAPI\DataAnnotationValidationUsingMinimalAPI.csproj", "{F38844DF-BB05-4ED7-92DE-EEA300614929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidatinsUsingController", "FluentValidatinsUsingController\FluentValidatinsUsingController.csproj", "{6E62F1A8-71A9-41BA-93BD-55DEE78A8244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidatinsUsingMinimalAPI2", "FluentValidatinsUsingMinimalAPI2\FluentValidatinsUsingMinimalAPI2.csproj", "{BF426FDF-16D9-FAFA-42D2-835CDF30F504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidatinsUsingMinimalAPI", "FluentValidatinsUsingMinimalAPI\FluentValidatinsUsingMinimalAPI.csproj", "{6089D1DF-88B3-4E47-834C-1BBF58F59679}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC9C0035-BDB0-45B5-81A3-5762DA824DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9C0035-BDB0-45B5-81A3-5762DA824DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9C0035-BDB0-45B5-81A3-5762DA824DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9C0035-BDB0-45B5-81A3-5762DA824DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F38844DF-BB05-4ED7-92DE-EEA300614929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F38844DF-BB05-4ED7-92DE-EEA300614929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F38844DF-BB05-4ED7-92DE-EEA300614929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F38844DF-BB05-4ED7-92DE-EEA300614929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E62F1A8-71A9-41BA-93BD-55DEE78A8244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E62F1A8-71A9-41BA-93BD-55DEE78A8244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E62F1A8-71A9-41BA-93BD-55DEE78A8244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E62F1A8-71A9-41BA-93BD-55DEE78A8244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF426FDF-16D9-FAFA-42D2-835CDF30F504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF426FDF-16D9-FAFA-42D2-835CDF30F504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF426FDF-16D9-FAFA-42D2-835CDF30F504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF426FDF-16D9-FAFA-42D2-835CDF30F504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6089D1DF-88B3-4E47-834C-1BBF58F59679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6089D1DF-88B3-4E47-834C-1BBF58F59679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6089D1DF-88B3-4E47-834C-1BBF58F59679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6089D1DF-88B3-4E47-834C-1BBF58F59679}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2542512-06AD-4CC9-99FD-26711077EEE2}
+	EndGlobalSection
+EndGlobal

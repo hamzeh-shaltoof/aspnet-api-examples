@@ -1,0 +1,11 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7188
+
+###
+GET {{baseURL}}/branch1
+
+###
+GET {{baseURL}}/branch2
+###
+GET {{baseURL}}/checkouts?mode=now

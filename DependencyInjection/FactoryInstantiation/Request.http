@@ -1,0 +1,8 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7172
+
+###
+GET {{baseURL}}/payment/5000
+
+

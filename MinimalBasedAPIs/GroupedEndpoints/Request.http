@@ -1,0 +1,19 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7089
+
+###
+GET {{baseURL}}/api/products
+
+###
+GET {{baseURL}}/api/products/8
+
+###
+POST {{baseURL}}/api/products
+content-type: application/json
+
+{
+   "id" : 3,
+   "Name" : "New Product",
+   "Price" : 12 
+}

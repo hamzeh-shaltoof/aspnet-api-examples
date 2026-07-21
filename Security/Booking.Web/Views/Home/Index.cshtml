@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<ul id="bookings-ul" class="list-group list-group-flush">
+</ul>
+
+@section Scripts {
+<script>
+ const url = "https://localhost:7002/api/bookings";
+ const ul = document.getElementById("bookings-ul");
+
+
+ fetch(url)
+  .then(response => response.json())
+  .then(data => showBook(data))
+  .catch(error => console.error(error));
+
+  function showBook(bookings) {
+
+     bookings.forEach(element => {
+         let li = document.createElement("li");
+         li.className = "list-group-item";
+
+         li.innerHTML = `
+             <strong>Id:</strong> ${element.id}<br>
+             <strong>Room:</strong> ${element.room}<br>
+             <strong>Customer:</strong> ${element.CustomerName}<br>
+             <strong>Check In:</strong> ${new Date(element.checkIn).toLocaleDateString()}<br>
+             <strong>Check Out:</strong> ${new Date(element.checkOut).toLocaleDateString()}
+         `;
+
+         ul.appendChild(li);
+     });
+
+  }
+    
+
+</script>
+}

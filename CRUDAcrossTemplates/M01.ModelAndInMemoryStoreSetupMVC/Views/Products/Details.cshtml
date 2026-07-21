@@ -1,0 +1,73 @@
+﻿@model M01.ModelAndInMemoryStoreSetupMVC.Model.Product
+@{
+	ViewData["Title"] = $"Details Of Product {Model.Name}";
+}
+<div class="container mt-5" dir="ltr">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-dark text-white">
+            <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Product Details</h5>
+        </div>
+
+        <div class="card-body p-4">
+            <dl class="row mb-0">
+                <dt class="col-sm-3 text-muted">ID</dt>
+                <dd class="col-sm-9 fw-bold">#@Model.Id</dd>
+
+                <hr class="text-light">
+
+                <dt class="col-sm-3 text-muted">Product Name</dt>
+                <dd class="col-sm-9">@Model.Name</dd>
+
+                <hr class="text-light">
+
+                <dt class="col-sm-3 text-muted">Price</dt>
+                <dd class="col-sm-9 text-success fw-bold">@Model.Price.ToString("C")</dd>
+
+                <hr class="text-light">
+
+                <dt class="col-sm-3 text-muted">Category</dt>
+                <dd class="col-sm-9"><span class="badge bg-light text-dark border">@Model.Category</span></dd>
+
+                <hr class="text-light">
+
+                <dt class="col-sm-3 text-muted">Description</dt>
+                <dd class="col-sm-9 text-secondary">@(Model.Description ?? "No description available")</dd>
+            </dl>
+
+            <div class="mt-4 pt-3 border-top d-flex gap-2">
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left"></i> Back to List
+                </a>
+
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning text-white">
+                    <i class="fas fa-edit"></i> Edit
+                </a>
+
+                <button onclick="confirmDelete('/Products/Delete/@Model.Id')" class="btn btn-danger">
+                    <i class="fas fa-trash"></i> Delete
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function confirmDelete(url) {
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "delete"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = url;
+                }
+            });
+        }
+    </script>
+}

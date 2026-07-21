@@ -1,0 +1,24 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseUrl = https://localhost:7052/api/bid
+
+###
+
+GET {{baseUrl}}
+
+###
+GET {{baseUrl}}/9e4a6f6d-c233-4399-afc8-d33637b34cda
+
+###
+POST {{baseUrl}}/create
+Content-Type : application/json
+
+{
+  "amount": 2550.00,
+  "bidDate": "2026-06-30T12:00:00Z",
+  "firstName": "sami",
+  "lastName": "rajb",
+  "email": "hasan.tamer@example.com",
+  "telephone": "+962790000000",
+  "address": "Amman, Jordan"
+}

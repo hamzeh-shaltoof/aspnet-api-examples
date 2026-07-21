@@ -1,0 +1,6 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7037
+
+GET {{baseURL}}/
+Cookie: theme=black; language=AR; timezone=America/Toronto

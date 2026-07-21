@@ -1,0 +1,27 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7018
+
+
+### To Store System Environment Variables =>  setx APISECRETKEY  API123
+GET {{baseURL}}/APISECRETKEY 
+
+
+#### To Store Project-Specific Environment Variables => ex : Go To File Lauchsettings.json Then Go To EnvironmentVariables And Write Variable as Loacl Project For Ex: (isDevelopment : True)
+GET {{baseURL}}/isDevelopment 
+
+
+### To Store  Commind-Line Provider Configuration => Go Terminal And Write (dotnet run --APISECRETTemporarily APITemporarily)
+GET {{baseURL}}/APISECRETTemporarily 
+
+### To Store  User-Secret Provider Configuration => Go Terminal And Write (dotnet user-secrets init) And Then (dotnet user-secret set "APIUSERSECRETDEVELOPMENTONLY"  "ABC12") But cannot return In Case Production ... Only Development
+GET {{baseURL}}/APIUSERSECRETDEVELOPMENTONLY
+
+
+### To Store File-based Provider  Built-in(appsetting.json,appsetting.develoment.json)  Custom-Build(config.ini , myconfighamzeh.json) 
+GET {{baseURL}}/myfilejson
+
+
+
+
+ 

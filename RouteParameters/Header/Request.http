@@ -1,0 +1,9 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7079
+
+###
+GET {{baseURL}}/header
+X-Version-Api:2.65
+k1:v1
+k2:v2

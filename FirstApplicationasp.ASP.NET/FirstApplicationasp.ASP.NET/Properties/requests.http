@@ -1,0 +1,14 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+### Get Authors
+
+GET https://localhost:7021/authors/hamzeh?title=ASP.NET
+content-type : application/json
+x-API-version : v1.5
+
+{
+    "sort" : "asc" ,
+    "filter" : "all"
+}
+
+

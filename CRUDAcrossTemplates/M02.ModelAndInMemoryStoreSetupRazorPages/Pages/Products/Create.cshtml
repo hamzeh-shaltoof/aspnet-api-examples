@@ -1,0 +1,44 @@
+﻿@page
+@model CreateModel
+@{
+    ViewData["Title"] = "Add Product Use Razor Pages";
+}
+
+<div class="container mt-5" dir="ltr">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-dark text-white">
+            <h5 class="mb-0">Add New Product</h5>
+        </div>
+
+        <div class="card-body">
+            <form  method="POST">
+
+                <div class="mb-3">
+                    <label asp-for="Product.Name" class="form-label fw-bold"></label>
+                    <input asp-for="Product.Name" type="text" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Product.Price" class="form-label fw-bold"></label>
+                    <input asp-for="Product.Price" type="number" step="0.01" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Product.Category" class="form-label fw-bold">Category:</label>
+                    <input asp-for="Product.Category" type="text" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Product.Description" class="form-label fw-bold">Description:</label>
+                    <textarea asp-for="Product.Description" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                    <a asp-page="Index" class="btn btn-secondary px-4">Cancel</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseUrl = https://localhost:7057
+
+GET {{baseUrl}}/login
+
+###
+GET {{baseUrl}}/logout
+
+###
+GET {{baseUrl}}/admin
+###
+GET {{baseUrl}}/supervisor
+
+###
+GET {{baseUrl}}/admin-supervisor
+
+###
+GET {{baseUrl}}/drive-bus
+
+###
+GET {{baseUrl}}/drive-taxi
+
+###
+GET {{baseUrl}}/drive-bus-taxi
+
+###
+GET {{baseUrl}}/policy
+###
+GET {{baseUrl}}/account-login

@@ -1,0 +1,69 @@
+﻿@page "/Products/Create"
+<h3>Create Product Use Blazor Pages</h3>
+
+<div class="container mt-5" dir="ltr">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-dark text-white">
+            <h5 class="mb-0">Add New Product</h5>
+        </div>
+
+        <div class="card-body">
+            <EditForm Model="Product" OnValidSubmit="Save" FormName="Create-Product">
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Name</label>
+                    <InputText @bind-value="Product.Name" type="text" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold"></label>
+                    <InputNumber @bind-value="Product.Price" type="number" step="0.01" class="form-control" />
+                </div>
+
+        
+
+                <div class="mb-3">
+                    <label  class="form-label fw-bold">Category:</label>
+                    <InputText @bind-value="Product.Category" type="text" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label  class="form-label fw-bold">Description:</label>
+                    <InputTextArea @bind-value="Product.Description" class="form-control" rows="3"></InputTextArea>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-success px-4">Save</button>
+                    <NavLink  href=@($"/Products") class="btn btn-secondary px-4">Cancel</NavLink>
+                </div>
+
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code {
+    [Inject]
+    public ProductStore Store { get; set; } = null!;
+
+    [Inject]
+    public NavigationManager Navigation { get; set; } = null!;
+
+    [SupplyParameterFromForm]
+    public Product Product { get; set; } = new();  // This Is Initialization Important
+
+
+    public async Task Save()
+    {
+        Product.Id = Guid.NewGuid();
+        if(Product is not null)
+           Store.Add(Product);
+
+        Navigation.NavigateTo("/Products");
+
+	}
+
+}

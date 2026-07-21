@@ -1,0 +1,9 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = http://localhost:5119
+
+###
+GET {{baseURL}}/single
+
+###
+GET {{baseURL}}/GetCount

@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# ASP0022: Route conflict detected between route handlers
+dotnet_diagnostic.ASP0022.severity = error

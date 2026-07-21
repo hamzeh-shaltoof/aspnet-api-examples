@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingBasic", "RoutingBasic\RoutingBasic.csproj", "{77286885-9C34-4EFD-824D-A1A6219735DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouteTemplates", "RouteTemplates\RouteTemplates.csproj", "{7FC9E635-EE49-4E28-BDD6-F27BDA663422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouteConstraints", "RouteConstraints\RouteConstraints.csproj", "{41A38771-8FCA-415C-A104-CB11A9B23EBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkGenerators", "LinkGenerators\LinkGenerators.csproj", "{F5D704FA-B69C-4339-B28B-0996AEE4EC53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterTransformers", "ParameterTransformers\ParameterTransformers.csproj", "{EDD500D7-BE73-4CB0-B475-65ACC1C4CF74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77286885-9C34-4EFD-824D-A1A6219735DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77286885-9C34-4EFD-824D-A1A6219735DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77286885-9C34-4EFD-824D-A1A6219735DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77286885-9C34-4EFD-824D-A1A6219735DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC9E635-EE49-4E28-BDD6-F27BDA663422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC9E635-EE49-4E28-BDD6-F27BDA663422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC9E635-EE49-4E28-BDD6-F27BDA663422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC9E635-EE49-4E28-BDD6-F27BDA663422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41A38771-8FCA-415C-A104-CB11A9B23EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A38771-8FCA-415C-A104-CB11A9B23EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A38771-8FCA-415C-A104-CB11A9B23EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A38771-8FCA-415C-A104-CB11A9B23EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D704FA-B69C-4339-B28B-0996AEE4EC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D704FA-B69C-4339-B28B-0996AEE4EC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D704FA-B69C-4339-B28B-0996AEE4EC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D704FA-B69C-4339-B28B-0996AEE4EC53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD500D7-BE73-4CB0-B475-65ACC1C4CF74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD500D7-BE73-4CB0-B475-65ACC1C4CF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD500D7-BE73-4CB0-B475-65ACC1C4CF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD500D7-BE73-4CB0-B475-65ACC1C4CF74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEE66C02-E887-4427-8519-972549804FE4}
+	EndGlobalSection
+EndGlobal

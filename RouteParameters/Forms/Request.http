@@ -1,0 +1,25 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7187
+
+###
+POST {{baseURL}}/product
+Content-Type:application/x-www-form-urlencoded 
+
+name=Soda&price=0.80
+
+
+
+
+### the solve is postman
+
+POST {{baseUrl}}/upload-minimal
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="file"; filename="profile-1.jpg"
+Content-Type: image/jpeg
+
+< ./profile-1.jpg
+
+--MyBoundary--

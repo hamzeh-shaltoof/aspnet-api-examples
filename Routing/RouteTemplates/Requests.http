@@ -1,0 +1,31 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7244
+
+
+###
+GET {{baseURL}}/Gaza/2026+10+7
+###
+GET {{baseURL}}/Gaza/2026+10+7
+###
+GET {{baseURL}}/products
+###
+GET {{baseURL}}/products/5
+###
+GET {{baseURL}}/axxxxxcwwwwww
+###
+GET {{baseURL}}/Single/my/paht/test%2wire
+###
+GET {{baseURL}}/Double/my/paht/test%2wire
+
+
+
+
+
+
+
+
+
+
+
+ 

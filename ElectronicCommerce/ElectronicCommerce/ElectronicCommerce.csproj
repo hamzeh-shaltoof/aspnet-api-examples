@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validators\Address\" />
+    <Folder Include="Validators\Category\" />
+    <Folder Include="Validators\ProductVariant\" />
+    <Folder Include="Validators\Request\" />
+    <Folder Include="Validators\Role\" />
+    <Folder Include="Validators\Size\" />
+    <Folder Include="DTOs\Address\" />
+    <Folder Include="DTOs\Category\" />
+    <Folder Include="DTOs\ProductVariant\" />
+    <Folder Include="DTOs\Request\" />
+    <Folder Include="DTOs\Role\" />
+    <Folder Include="DTOs\Size\" />
+  </ItemGroup>
+
+</Project>

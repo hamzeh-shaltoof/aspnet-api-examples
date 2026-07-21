@@ -1,0 +1,25 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@baseURL = https://localhost:7104
+
+
+###
+GET {{baseURL}}/order/8
+###
+PUT {{baseURL}}/order/8
+###
+DELETE {{baseURL}}/order/8
+###
+GET {{baseURL}}/orderItem/8
+
+
+
+
+
+
+
+
+
+
+
+ 
